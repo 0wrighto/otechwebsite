@@ -1,0 +1,43 @@
+﻿<DOCTYPE! html>
+<html>
+<head>
+<title>Otech.co.uk</title>
+</head>
+<body>
+
+<h1>Welcome to Otech website</h1>
+<h4>Latest codes released for bbc microbit v1 and v2 are:</h4>
+<p>BootOS 3.2.4</p>
+
+<p>~</p>
+<p>~</p>
+<p>~</p>
+<p>~</p>
+<p>~</p>
+<p>~</p>
+<p>~</p>
+<p>~</p>
+<h4>enter password below for staff page</h4>
+<form>
+    <label for="pswd">Enter your password: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="Authenticate" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is ********-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "134679";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="welcome.html";
+        }
+        else{
+            alert("Incorrect Password.");
+        }
+    }
+</script>
+
+<p>Otech was founded by Oliver Wright in 2019</p>
+
+</body>
+</html>
